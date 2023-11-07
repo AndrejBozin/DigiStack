@@ -4,13 +4,15 @@ import { categories } from '../data'
 import CategoryItem from './CategoryItem'
 
 const Container = styled.div`
-    
+    display: flex;
+    padding: 20px;
+    justify-items: space-between;
 `
 const Categories = () => {
   return (
     <Container>
       {categories.map(item => {
-        <CategoryItem item={item}/>
+        return <CategoryItem item={item}/>
       })}
     </Container>
   )
